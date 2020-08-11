@@ -32,8 +32,10 @@ function Inputs() {
   const [output, setOutput] = useState("");
 
   function compare(finalResult) {
-    var dataArray = data.split(" ");
+    var temp = data.replace(/\s+/g, " ").trim();
 
+    var dataArray = temp.split(" ");
+    console.log("hello", temp);
     console.log(finalResult, dataArray);
 
     for (let i in finalResult) {
