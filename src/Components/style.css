@@ -1,0 +1,53 @@
+.Div {
+  width: 500px;
+  border: 1px solid black;
+  height: auto;
+  min-height: 100px;
+  align-items: center;
+}
+
+.main {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 20px;
+}
+.User {
+  min-width: 400px;
+  width: auto;
+  height: 98px;
+  border: none;
+  outline: none;
+}
+.Error {
+  color: white;
+  background-color: red;
+  width: 500px;
+  text-align: center;
+  height: auto;
+  min-height: 100px;
+}
+
+.Button {
+  background-color: blueviolet;
+  width: auto;
+  min-width: 50px;
+  height: auto;
+  min-height: 30px;
+  align-items: center;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Correct {
+  background-color: green;
+  color: white;
+  width: 500px;
+  text-align: center;
+  height: auto;
+  min-height: 100px;
+}
