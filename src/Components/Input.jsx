@@ -88,7 +88,7 @@ function Inputs() {
       </div>
 
       <div className="Div" style={{ height: "100px", alignItems: "center" }}>
-        <div style={{ display: "flex" }}>
+        <div>
           {result.map((item, index) => {
             return (
               <div
@@ -108,32 +108,30 @@ function Inputs() {
       </div>
 
       <div className="Div">
-        <div style={{ display: "flex" }}>
-          {arrange.map((item, index) => {
-            return (
-              <div
-                className="Button"
-                onClick={() => {
-                  setval(item, index);
-                }}
-                style={{ display: "inline-block" }}
-              >
-                {item}
-              </div>
-            );
-          })}
+        {arrange.map((item, index) => {
+          return (
+            <div
+              className="Button"
+              onClick={() => {
+                setval(item, index);
+              }}
+              style={{ display: "inline-block" }}
+            >
+              {item}
+            </div>
+          );
+        })}
 
-          {output === false ? (
-            <div className="Error">
-              <h1>This is not Correct</h1>
-            </div>
-          ) : null}
-          {output === true ? (
-            <div className="Correct">
-              <h1>This is Correct</h1>
-            </div>
-          ) : null}
-        </div>
+        {output === false ? (
+          <div className="Error">
+            <h1>This is not Correct</h1>
+          </div>
+        ) : null}
+        {output === true ? (
+          <div className="Correct">
+            <h1>This is Correct</h1>
+          </div>
+        ) : null}
       </div>
     </div>
   );
